@@ -1,0 +1,1 @@
+SELECT season, winner, COUNT(*) AS matchesWon FROM matches WHERE winner IS NOT NULL GROUP BY season, winner ORDER BY season, matchesWon DESC;

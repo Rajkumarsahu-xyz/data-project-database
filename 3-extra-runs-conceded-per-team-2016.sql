@@ -1,0 +1,1 @@
+SELECT bowling_team, SUM(extra_runs) AS totalExtraRunsConceded FROM deliveries INNER JOIN matches ON deliveries.match_id = matches.id WHERE matches.season = 2016 GROUP BY bowling_team;

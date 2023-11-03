@@ -1,0 +1,1 @@
+SELECT season, COUNT(season) AS numberOfMatches FROM matches GROUP BY season;

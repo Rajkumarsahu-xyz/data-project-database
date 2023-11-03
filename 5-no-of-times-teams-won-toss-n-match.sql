@@ -1,0 +1,1 @@
+SELECT toss_winner, SUM(CASE WHEN toss_winner = winner THEN 1 ELSE 0 END) AS tossAndMatchWinner FROM matches GROUP BY toss_winner;
