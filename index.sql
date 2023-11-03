@@ -48,6 +48,6 @@ CREATE TABLE if not exists deliveries (
 
 /* Copying data from csv-files to database tables matches and deliveries */
 
-\COPY matches FROM 'home/user/data-project-database/csv-files/matches.csv' DELIMITER ',' CSV HEADER;
+\COPY matches FROM 'data-project-database/csv-files/matches.csv' DELIMITER ',' CSV HEADER;
 
-\COPY deliveries FROM 'home/user/data-project-database/csv-files/deliveries.csv' DELIMITER ',' CSV HEADER;
+\COPY deliveries FROM 'data-project-database/csv-files/deliveries.csv' DELIMITER ',' CSV HEADER;
